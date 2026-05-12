@@ -9,9 +9,9 @@ const Card = ({ player }) => {
     rating,
     role
   } = player;
-  console.log(name);
 
   return (
+    
     <div className="w-[260px] bg-white rounded-xl shadow-2xl overflow-hidden">
       <img
         className="w-full h-[220px] object-cover"
