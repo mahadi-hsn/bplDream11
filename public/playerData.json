@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": 4.9,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm-Medium",
+    "price": 1500000,
+    "image": "https://i.ibb.co.com/QFx7DvJj/kohli231007.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "rating": 4.8,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off-Spin",
+    "price": 1400000,
+    "image": "https://i.ibb.co.com/XBVFJMN/62f4fc25122d1c177b143670c34d3aec.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jos Buttler",
+    "country": "England",
+    "role": "Wicket-Keeper",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1350000,
+    "image": "https://i.ibb.co.com/XfzFdf53/skysports-jos-buttler-england-cricket-6863355.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 4.8,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off-Spin",
+    "price": 1450000,
+    "image": "https://i.ibb.co.com/bgRTVCFv/cd4c35d61d44f80ef1f79027864c7d5c.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "rating": 4.9,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm-Spin",
+    "price": 1300000,
+    "image": "https://i.ibb.co.com/4DrS2dh/2c31015d1d3df874992d5f90c4d9c1ab.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off-Spin",
+    "price": 1250000,
+    "image": "https://i.ibb.co.com/KzbKYm53/a1e5ab820befe388015c0f5125ac6878.jpg"
+  },
+  {
+    "id": 7,
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": 4.6,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1200000,
+    "image": "https://i.ibb.co.com/dHGNhQ2/df4ec6425dd7d8edf8d6a4ed38469e4b.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "rating": 4.9,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Right-Arm-Fast",
+    "price": 1550000,
+    "image": "https://i.ibb.co.com/fz00yYBP/e25314e16170b48dbbbe00e5812fa795.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": 4.8,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Leg-Spin",
+    "price": 1280000,
+    "image": "https://i.ibb.co.com/YBrLKzjN/56e31a51db12b88dc5593d8250af2d63.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm-Medium",
+    "price": 1380000,
+    "image": "https://i.ibb.co.com/MkcZzT9r/2ae48847c25ebae42d108a415efc1961.jpg"
+  },
+  {
+    "id": 11,
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicket-Keeper",
+    "rating": 4.9,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1600000,
+    "image": "https://i.ibb.co.com/Q45gXKc/663ab3e75f27281c17daaceb6dd786b1.jpg"
+  },
+  {
+    "id": 12,
+    "name": "KL Rahul",
+    "country": "India",
+    "role": "Wicket-Keeper",
+    "rating": 4.5,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1180000,
+    "image": "https://i.ibb.co.com/Zz5ZHzvy/995eb66a5cba42d1006a4dec7d80aef7.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "rating": 4.9,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm-Fast",
+    "price": 1500000,
+    "image": "https://i.ibb.co.com/bg4VXcbR/c685bce4ee08bbfec57263f270fbc9d0.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "rating": 4.6,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Left-Arm-Fast",
+    "price": 1190000,
+    "image": "https://i.ibb.co.com/C379TCL9/5b3b815de72f07e2f7fbc39ace18f89c.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Mohammad Rizwan",
+    "country": "Pakistan",
+    "role": "Wicket-Keeper",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1260000,
+    "image": "https://i.ibb.co.com/QvzrZWrz/17c533897ef9403e0ad0ccb4dc862295.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "rating": 4.8,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm-Fast",
+    "price": 1420000,
+    "image": "https://i.ibb.co.com/zTzngJTd/15755a0ec9ec6c85be890cf8bc4e1c06.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off-Spin",
+    "price": 1320000,
+    "image": "https://i.ibb.co.com/RTT3ySKg/07bcf6bd52d939200bb31698e262d1d8.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicket-Keeper",
+    "rating": 4.6,
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1210000,
+    "image": "https://i.ibb.co.com/6R69rZG4/cf49738d6ba3a4acd89860f2f05ab6db.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Suryakumar Yadav",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 4.8,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1340000,
+    "image": "https://i.ibb.co.com/6cLssG4L/1896a8e11f7ddb6824a4834a04f6eca0.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "rating": 4.7,
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm-Fast",
+    "price": 1480000,
+    "image": "https://i.ibb.co.com/Xrw3rgf7/97775dcab4a2caae7ae7ab2a96568652.jpg"
+  }
+]
