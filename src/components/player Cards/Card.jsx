@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Card = ({ player, setCoin , coin}) => {
+const Card = ({ player, setCoin, coin , handleSelectedPlayer }) => {
   const {
     name,
     battingStyle,
@@ -15,8 +15,15 @@ const Card = ({ player, setCoin , coin}) => {
   const [isSelected, setIsSelected] = useState(false);
 
   const handleChoosePlayer = () => {
+    const newCoin = coin - price;
+    if (newCoin >= 0) {
+      setCoin(coin - price);
+    } else {
+      alert("Not enough coin");
+      return
+    }
     setIsSelected(true);
-    setCoin(coin - price);
+    handleSelectedPlayer(player);
   };
   return (
     <div className="w-[260px] bg-white rounded-xl shadow-2xl overflow-hidden">
