@@ -1,7 +1,7 @@
 import { use, useState } from "react";
-import Card from "./Card";
-
-const PlayerCards = ({ promise }) => {
+import AvailablePlayer from "../players/AvailablePlayer";
+import SelectedPlayer from "../players/SelectedPlayer";
+const PlayerCards = ({ promise , setCoin , coin}) => {
   const playerData = use(promise);
   const [select, setSelect] = useState("available");
 
@@ -28,11 +28,11 @@ const PlayerCards = ({ promise }) => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-5 justify-items-center mt-10">
-        {playerData.map((player) => (
-          <Card key={player.id} player={player}></Card>
-        ))}
-      </div>
+      {select === "available" ? (
+        <AvailablePlayer playerData={playerData} setCoin={setCoin} coin={coin}></AvailablePlayer>
+      ) : (
+        <SelectedPlayer></SelectedPlayer>
+      )}
     </div>
   );
 };

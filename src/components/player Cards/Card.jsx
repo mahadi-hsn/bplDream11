@@ -1,4 +1,6 @@
-const Card = ({ player }) => {
+import { useState } from "react";
+
+const Card = ({ player, setCoin , coin}) => {
   const {
     name,
     battingStyle,
@@ -7,11 +9,16 @@ const Card = ({ player }) => {
     image,
     price,
     rating,
-    role
+    role,
   } = player;
 
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleChoosePlayer = () => {
+    setIsSelected(true);
+    setCoin(coin - price);
+  };
   return (
-    
     <div className="w-[260px] bg-white rounded-xl shadow-2xl overflow-hidden">
       <img
         className="w-full h-[220px] object-cover"
@@ -49,8 +56,16 @@ const Card = ({ player }) => {
         <div className="flex justify-between items-center">
           <p className="font-bold text-sm text-gray-800">Price: ${price}</p>
 
-          <button className="border border-gray-300 px-3 py-2 rounded-lg text-sm hover:bg-black hover:text-white transition duration-300">
-            Choose Player
+          <button
+            onClick={handleChoosePlayer}
+            disabled={isSelected}
+            className={`border border-gray-300 px-3 py-2 rounded-lg text-sm transition duration-300 ${
+              isSelected
+                ? "bg-black text-white cursor-not-allowed opacity-80"
+                : "hover:bg-black hover:text-white"
+            }`}
+          >
+            {isSelected ? "Selected" : "Choose Player"}
           </button>
         </div>
       </div>
