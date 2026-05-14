@@ -56,7 +56,7 @@ const PlayerCards = ({ promise, setCoin, coin }) => {
           handleSelectedPlayer={handleSelectedPlayer}
         ></AvailablePlayer>
       ) : (
-        <SelectedPlayers selectedPlayer={selectedPlayer}></SelectedPlayers>
+        <SelectedPlayers selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} coin={coin} setCoin={setCoin}></SelectedPlayers>
       )}
 
     </div>

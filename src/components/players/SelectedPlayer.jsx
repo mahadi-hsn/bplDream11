@@ -1,7 +1,11 @@
-import { Trash, Trash2 } from "lucide";
-
-const SelectedPlayer = ({ player }) => {
-  console.log(player);
+const SelectedPlayer = ({ players, selectedPlayer, setSelectedPlayer, coin , setCoin}) => {
+  const handleDelete = () => {
+    const filteredPlayer = selectedPlayer.filter(
+      (player) => player.name != players.name,
+    );
+    setSelectedPlayer(filteredPlayer)
+    setCoin(coin + players.price)
+  };
   return (
     <div className="border border-amber-500 my-5 p-5 rounded-2xl">
       <div className="flex items-center justify-between">
@@ -9,17 +13,24 @@ const SelectedPlayer = ({ player }) => {
           <div>
             <img
               className="h-[100px] w-[100px] rounded-lg"
-              src={player.image}
+              src={players.image}
               alt=""
             />
           </div>
           <div>
-            <h1 className="text-xl font-bold">{player.name}</h1>
-            <h4>{player.role}</h4>
+            <h1 className="text-xl font-bold">{players.name}</h1>
+            <h4>{players.role}</h4>
           </div>
         </div>
         <div>
-          <button className="btn">Delete</button>
+          <button
+            onClick={() => {
+              handleDelete();
+            }}
+            className="btn"
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>
