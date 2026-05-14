@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { toast } from "react-toastify";
 
-const Card = ({ player, setCoin, coin , handleSelectedPlayer }) => {
+const Card = ({ player, setCoin, coin , handleSelectedPlayer, isSelected }) => {
   const {
     name,
     battingStyle,
@@ -12,26 +12,29 @@ const Card = ({ player, setCoin, coin , handleSelectedPlayer }) => {
     role,
   } = player;
 
-  const [isSelected, setIsSelected] = useState(false);
-
   const handleChoosePlayer = () => {
+    if (isSelected) {
+      return;
+    }
     const newCoin = coin - price;
     if (newCoin >= 0) {
       setCoin(coin - price);
     } else {
-      alert("Not enough coin");
+      toast.error("Not enough coin");
       return
     }
-    setIsSelected(true);
+    toast.success(player.name + "is selected");
     handleSelectedPlayer(player);
   };
   return (
     <div className="w-[260px] bg-white rounded-xl shadow-2xl overflow-hidden">
-      <img
-        className="w-full h-[220px] object-cover"
-        src={image}
-        alt="Virat Kohli"
-      />
+      <div className="w-full h-[220px] bg-slate-100 flex items-center justify-center">
+        <img
+          className="w-full h-full object-contain"
+          src={image}
+          alt={name}
+        />
+      </div>
 
       <div className="p-4">
         <div className="flex items-center gap-3 mb-4">

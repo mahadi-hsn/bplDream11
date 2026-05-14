@@ -1,10 +1,19 @@
-const SelectedPlayer = ({ players, selectedPlayer, setSelectedPlayer, coin , setCoin}) => {
+import { toast } from "react-toastify";
+
+const SelectedPlayer = ({
+  players,
+  selectedPlayer,
+  setSelectedPlayer,
+  coin,
+  setCoin,
+}) => {
   const handleDelete = () => {
     const filteredPlayer = selectedPlayer.filter(
       (player) => player.name != players.name,
     );
-    setSelectedPlayer(filteredPlayer)
-    setCoin(coin + players.price)
+    setSelectedPlayer(filteredPlayer);
+    setCoin(coin + players.price);
+    toast.warning(players.name + "is removed");
   };
   return (
     <div className="border border-amber-500 my-5 p-5 rounded-2xl">

@@ -12,6 +12,12 @@ const PlayerCards = ({ promise, setCoin, coin }) => {
   const [selectedPlayer , setSelectedPlayer] = useState([]);
 
   const handleSelectedPlayer = (player) =>{
+    const alreadySelected = selectedPlayer.some(
+      (selected) => selected.id === player.id,
+    );
+    if (alreadySelected) {
+      return;
+    }
     const newSelectedPlayer = [...selectedPlayer , player];
     setSelectedPlayer(newSelectedPlayer);
   }
@@ -54,6 +60,7 @@ const PlayerCards = ({ promise, setCoin, coin }) => {
           setCoin={setCoin}
           coin={coin}
           handleSelectedPlayer={handleSelectedPlayer}
+          selectedPlayer={selectedPlayer}
         ></AvailablePlayer>
       ) : (
         <SelectedPlayers selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} coin={coin} setCoin={setCoin}></SelectedPlayers>
